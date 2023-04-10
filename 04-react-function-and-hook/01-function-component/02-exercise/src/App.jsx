@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function App() {
+  
   return (
     <div id="app">
       <Header />
@@ -12,29 +13,36 @@ function App() {
 
 function Header() {
   return (
-    // Code here
-    // <Header />
+    <header>
+      <span>Turn on / off</span>
+      <p>Current Temperature: XXX</p>
+    </header>
   );
 }
 
 function Content() {
   return (
-    // Code here
-    // <Content />
-  );
+    <main>
+      <Temperature/>
+    </main>
+  )
 }
 
 function Temperature() {
+  let temperature = 33;
   return (
-    // Code here
-    // <Temperature />
+    <div id="temperature">
+      <span>{temperature} Oc</span>
+    </div>
   );
 }
 
 function Footer() {
   return (
-    // Code here
-    // <Footer />
+    <footer>
+      <button>Up</button>
+      <button>Down</button>
+    </footer>
   );
 }
 
